@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import UnloggedNav from '../ui-components/navs/unlogged-nav';
 
 interface ArtsProps {
   
@@ -6,7 +7,10 @@ interface ArtsProps {
 
 const Arts: FC<ArtsProps> = ({ }) => {
   return (
-    <div>Listado de artículos en orden cronológico</div>
+    <div>
+        <UnloggedNav/>
+        <p>Listado de artículos en orden cronológico</p>
+    </div>
   );
 };
 
