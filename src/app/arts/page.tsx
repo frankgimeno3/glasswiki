@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import UnloggedNav from '../ui-components/navs/unlogged-nav';
 
-interface ArtsProps {
+interface ArtsProps  {
   
 }
 

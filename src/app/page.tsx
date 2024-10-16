@@ -1,5 +1,4 @@
-import Image from "next/image";
-import UnloggedNav from "./ui-components/navs/unlogged-nav";
+ import UnloggedNav from "./ui-components/navs/unlogged-nav";
 import Searchbar from "./ui-components/searchbar";
 import Link from "next/link";
 
