@@ -26,7 +26,7 @@ export default function Home() {
       <p className="text-sm">Check</p>
       </div>
       </div>
-
+      <p className="font-bold text-7xl text-gray-300 mt-24">Página en construcción</p>
     </div>
     </>
   );
