@@ -7,9 +7,9 @@ interface UnloggedNavProps {
 
 const UnloggedNav: FC<UnloggedNavProps> = ({ }) => {
     return (
-        <div className='flex flex-row justify-between px-5 bg-zinc-700 text-sm'>
-            <div className='flex flex-row my-5'>
-                <div className='flex flex-row'>
+        <div className='flex flex-row justify-between px-5 bg-zinc-700 text-sm items-center'>
+            <div className='flex flex-row my-5  items-center'>
+                <div className='flex flex-row mr-4'>
                     <div className='h-8 p-8  mx-2 ml-7 bg-gray-300 rounded-lg'></div>
                     <div className='flex flex-col  '>
                         <p className='font-bold text-2xl mt-2 '>GlassWiki
@@ -17,8 +17,8 @@ const UnloggedNav: FC<UnloggedNavProps> = ({ }) => {
                         <p className='text-xs'>La enciclopedia del sector del vidrio</p>
                     </div>
                 </div>
-                <div className='ml-12 my-3 flex flex-row items-center border border-gray-100 shadow rounded-lg bg-white'>
-                    <input className="bg-transparent px-4 text-xs text-gray-500 " placeholder='Buscar artículos...' style={{ width: '400px' }} />
+                <div className='ml-56  mt-3 flex flex-row items-center border border-gray-100 shadow rounded-lg bg-white'>
+                    <input className="bg-transparent px-4 py-3  text-xs text-gray-500 " placeholder='Buscar artículos...' style={{ width: '400px' }} />
                     <Link className="w-10  items-center" href={'/search/check'}>
                         <svg
                             viewBox="0 0 60 30"
@@ -31,10 +31,16 @@ const UnloggedNav: FC<UnloggedNavProps> = ({ }) => {
                     </Link>
                 </div>
             </div>
-            <div>
-                <button>Iniciar Sesión</button>
-                <button>Registro</button>
-                <button>Crear una página</button>
+            <div className='flex flex-row items-center text-xs'>
+                <button className='bg-opacity-5 bg-white hover:bg-opacity-20 rounded-lg m-1 py-2 ' style={{width:"120px"}}>
+                    Iniciar Sesión
+                </button>
+                <button className='bg-opacity-5 bg-white hover:bg-opacity-20 rounded-lg m-1 py-2 ' style={{width:"120px"}}>
+                    Registro
+                </button>
+                <button className='bg-opacity-40 bg-white hover:bg-opacity-50 hover:font-bold rounded-lg m-1 py-2 ' style={{width:"120px"}}>
+                    Crear una página
+                </button>
             </div>
         </div>
     );
