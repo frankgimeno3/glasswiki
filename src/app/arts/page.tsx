@@ -7,7 +7,7 @@ interface ArtsProps {
 
 const Arts: FC<ArtsProps> = ({ }) => {
   return (
-    <div>
+    <div className='min-h-screen p-12'>
         <UnloggedNav/>
         <p>Listado de artículos en orden cronológico</p>
     </div>

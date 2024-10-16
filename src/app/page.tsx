@@ -1,6 +1,7 @@
 import Image from "next/image";
 import UnloggedNav from "./ui-components/navs/unlogged-nav";
 import Searchbar from "./ui-components/searchbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <div className="bg-white shadow-md rounded-lg p-6 w-full mx-6">
       <p className="text-xl">Artículos recientes</p>
       <p className="text-sm">Check</p>
+      <Link href={"/arts"}/>
       </div>
       </div>
       <p className="font-bold text-7xl text-gray-300 mt-24">Página en construcción</p>
